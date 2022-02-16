@@ -14,7 +14,6 @@ namespace Algorithms
             {
                 int mid = (start + end) / 2;
                 if (list[mid].CompareTo(find)==0) return mid;
-              //  if (mid == 0) return false;
                 if (find.CompareTo(list[mid]) > 0) return Search(list, find, mid + 1, end);
                 else
                     return Search(list, find, start, mid - 1);
