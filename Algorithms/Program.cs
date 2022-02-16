@@ -10,20 +10,19 @@ namespace Algorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the List of Words Seperated By ','");
-            string given=Console.ReadLine();    
-            string [] list = given.Split(',');
-            List<string>list1=new List<string>();
-            List<string> list2= new List<string>();
-            for (int i=0;i<list.Length;i++) 
-                list1.Add(list[i]);
-            MergeSort mergeSort=new MergeSort();
-           list2= mergeSort.Mergesort(list1);
-            foreach(string s in list2)
+            Console.WriteLine("Enter the two string");
+            string first,second;
+            first = Console.ReadLine();
+            second = Console.ReadLine();
+            Anagram anagram = new Anagram();
+            if (anagram.Check(first, second))
             {
-                Console.Write(s + " ");
+                Console.WriteLine("Given string are anagram");
             }
-            Console.WriteLine();
+            else
+            {
+                Console.WriteLine("Strings are not anagram");
+            }
         }
     }
 }
