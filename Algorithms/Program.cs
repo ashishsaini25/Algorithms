@@ -17,7 +17,7 @@ namespace Algorithms
             Anagram anagram = new Anagram();
             if (anagram.Check(first, second))
             {
-                Console.WriteLine("Given string are anagram");
+                Console.WriteLine("the string are anagram");
             }
             else
             {

@@ -23,8 +23,7 @@ namespace Algorithms
             first.ToLower();
             second.ToLower();
             first=SortString(first);
-            second=SortString(second);
-            Console.WriteLine(first,second);    
+            second=SortString(second);    
             if (first.CompareTo(second) == 0)
             {
                 return true;
