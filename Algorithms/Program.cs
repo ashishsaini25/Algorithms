@@ -10,19 +10,10 @@ namespace Algorithms
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the two string");
-            string first,second;
-            first = Console.ReadLine();
-            second = Console.ReadLine();
-            Anagram anagram = new Anagram();
-            if (anagram.Check(first, second))
-            {
-                Console.WriteLine("the string are anagram");
-            }
-            else
-            {
-                Console.WriteLine("Strings are not anagram");
-            }
+            Console.WriteLine("Enter the number upto which you want prime number");
+            int number=Convert.ToInt32(Console.ReadLine());
+            PrimeNumber primeNumber = new PrimeNumber();
+            primeNumber.PrintPrime(number);
         }
     }
 }
